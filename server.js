@@ -21,12 +21,12 @@ app.use((req, res, next) => {
   next();
 })
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs', {
-    pageTitle: 'Server Maintenance',
-    message: 'This Server is being maintenanced'
-  })
-})
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs', {
+//     pageTitle: 'Server Maintenance',
+//     message: 'This Server is being maintenanced'
+//   })
+// })
 
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear();
