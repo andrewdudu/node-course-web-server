@@ -59,6 +59,6 @@ app.get('/bad', (req, res) => {
   })
 })
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log(`Server is listening on port ${port}`)
 });
